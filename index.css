@@ -1,0 +1,167 @@
+/* ===== ESTILO GERAL DO SITE ===== */
+body {
+  margin: 0; 
+  /* remove o espaço padrão do navegador */
+
+  background: linear-gradient(135deg, #000000, #1a1a1a); 
+  /* fundo com degradê (mais bonito que cor sólida) */
+
+  color: white; 
+  /* define a cor padrão dos textos */
+
+  font-family: Arial; 
+  /* define a fonte do site */
+}
+
+/* ===== TOPO DO SITE ===== */
+header {
+  background-color: #111; 
+  /* fundo escuro do topo */
+
+  padding: 20px; 
+  /* espaço interno (deixa mais organizado) */
+
+  text-align: center; 
+  /* centraliza o nome */
+}
+
+/* ===== BLOCO DE PERFIL (CARD) ===== */
+.perfil {
+  display: flex; 
+  /* ativa o flexbox (layout moderno) */
+
+  flex-direction: column; 
+  /* organiza em coluna (um embaixo do outro) */
+
+  align-items: center; 
+  /* centraliza tudo */
+
+  background-color: #111; 
+  /* fundo do card */
+
+  padding: 20px; 
+  /* espaço interno */
+
+  border-radius: 15px; 
+  /* bordas arredondadas */
+
+  width: 250px; 
+  /* largura do card */
+
+  margin: 40px auto; 
+  /* centraliza o card na tela */
+
+  animation: aparecer 1s ease; 
+  /* animação ao carregar */
+}
+
+/* ===== IMAGEM ===== */
+.perfil img {
+  width: 120px; 
+  /* largura da imagem */
+
+  height: 120px; 
+  /* altura fixa */
+
+  border-radius: 50%; 
+  /* deixa a imagem redonda */
+
+  object-fit: cover; 
+  /* evita distorção (corta a imagem corretamente) */
+
+  border: 3px solid #00ff88; 
+  /* borda verde bonita */
+
+  box-shadow: 0 0 15px rgba(0,255,136,0.3); 
+  /* efeito de brilho */
+}
+
+/* ===== BOTÃO ===== */
+.perfil button {
+  margin-top: 15px; 
+  /* espaço acima */
+
+  padding: 10px 20px; 
+  /* tamanho interno */
+
+  border: none; 
+  /* remove borda padrão */
+
+  background: linear-gradient(45deg, #00ff88, #00cc6a); 
+  /* botão com degradê */
+
+  border-radius: 10px; 
+  /* bordas arredondadas */
+
+  cursor: pointer; 
+  /* muda o cursor */
+
+  font-weight: bold; 
+  /* texto mais forte */
+
+  transition: 0.3s; 
+  /* animação suave */
+}
+
+/* ===== EFEITO BOTÃO ===== */
+.perfil button:hover {
+  transform: scale(1.05); 
+  /* aumenta levemente ao passar o mouse */
+}
+
+/* ===== SEÇÃO SOBRE ===== */
+.sobre {
+  text-align: center; 
+  /* centraliza o texto */
+
+  margin: 40px; 
+  /* espaço em volta */
+}
+
+/* ===== RODAPÉ ===== */
+footer {
+  text-align: center; 
+  /* centraliza conteúdo */
+
+  padding: 20px; 
+  /* espaço interno */
+
+  background-color: #111; 
+  /* fundo escuro */
+
+  margin-top: 40px; 
+  /* espaço acima */
+}
+
+/* ===== LINKS ===== */
+a {
+  color: #00ff88; 
+  /* cor verde */
+
+  text-decoration: none; 
+  /* remove sublinhado */
+}
+
+a:hover {
+  text-decoration: underline; 
+  /* aparece sublinhado ao passar o mouse */
+}
+
+/* ===== ANIMAÇÃO ===== */
+@keyframes aparecer {
+  from {
+    opacity: 0; 
+    /* começa invisível */
+
+    transform: translateY(20px); 
+    /* começa um pouco abaixo */
+  }
+
+  to {
+    opacity: 1; 
+    /* fica visível */
+
+    transform: translateY(0); 
+    /* volta pra posição normal */
+  }
+}
